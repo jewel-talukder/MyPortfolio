@@ -8,11 +8,18 @@ import { WorkExperience } from '../models/models';
 })
 export class WorkExperienceComponent implements OnInit {
   workExpList: WorkExperience[] = [
-
+    {
+      role: 'Software Engineer',
+      company: 'Dream71 Bangladesh Ltd',
+      duration: 'Feb 2024 - Now',
+      description: [
+        'Working on Govt Projects i.e.:High Way Road Management Software',
+      ],
+    },
     {
       role: 'Jr. Software Engineer',
       company: 'Flex Infotech Limited',
-      duration: 'Oct 2022 - Now',
+      duration: 'Oct 2022 - Jan 2024',
       description: [
         'Working on Various Software Projects i.e.:Denim ERP,Smart Printing Solution,PMS etc.',
         'Working to develop new technologies to make life easier.',

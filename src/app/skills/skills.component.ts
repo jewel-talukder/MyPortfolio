@@ -9,51 +9,40 @@ import { Skill } from '../models/models';
 export class SkillsComponent implements OnInit {
   skills: Skill[] = [
     {
-      name: 'Angular, Angular Material',
-      level: 'Expert',
-      rating: 85,
+      name: 'Angular, Angular Material'
     },
     {
-      name: 'ASP.NET Core, EF Core',
-      level: 'Expert',
-      rating: 75,
+      name: 'ASP.NET Core MVC, EF Core,ASP .NET Core Web API'
     },
     {
       name: 'HTML, CSS, JS',
-      level: 'Expert',
-      rating: 90,
     },
     {
       name: 'C#',
-      level: 'Expert',
-      rating: 80,
     },
     {
-      name: 'C++',
-      level: 'Intermidiate',
-      rating: 60,
+      name: 'C++'
     },
     {
-      name:'EF Core,XPO',
-      level:'Expert',
-      rating:85
+      name:'eXpress Persistent Objects (XPO)'
     },{
-      name:'SQL Server',
-      level:'Intermidiate',
-      rating:70
+      name:'SQL Server'
     },{
-      name:'GitHub',
-      level:'Expert',
-      rating:80
+      name:'GitHub'
     },{
-      name:'Jira',
-      level:'Intermidiate',
-      rating:65
+      name:'Jira'
     },
     {
-      name:'Blazor',
-      level:'Beginner',
-      rating:50
+      name:'Blazor'
+    },
+    {
+      name:'PostgreSQL'
+    },
+    {
+      name:'Devextreme UI With Angular'
+    },
+    {
+      name:'jQuery'
     }
   ];
   constructor() {}

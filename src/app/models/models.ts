@@ -14,8 +14,6 @@ export interface WorkExperience {
 
 export interface Skill {
   name: string;
-  level: string;
-  rating: number;
 }
 
 export interface Project {

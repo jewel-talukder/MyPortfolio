@@ -8,11 +8,17 @@
             <span>Hi,</span> I am
         </span><br>
         <span>Jewel Talukder</span><br>
-        <span>Software Developer</span>
+        <span>Software Engineer</span>
     </div>
-
+    <div class="spinner-container" *ngIf="!imageLoaded">
+        <div class="spinner"></div>
+      </div>
+      
     <div class="profile">
         <div class="profile-bg"></div>
-        <img src="../../assets/DSC_0011-removebg.png" alt="">
+        <div class="spinner-container" *ngIf="!imageLoaded">
+            <div class="spinner"></div>
+          </div>
+        <img src="../../assets/DSC_0011-removebg.png" alt="" (load)="imageLoaded = true" >
     </div>
 </div>

@@ -7,6 +7,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
   styleUrls: ['./baner.component.css'],
 })
 export class BanerComponent implements OnInit {
+  imageLoaded: boolean = false;
   constructor(private breakpointObserver: BreakpointObserver) {}
 
   ngOnInit(): void {}
