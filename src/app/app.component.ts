@@ -7,7 +7,7 @@ import { Component, HostBinding } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Portfolio';
+  title = 'Jewel Talukder';
   @HostBinding('class.pc') pcMode = false;
 
   constructor(private breakpointObserver: BreakpointObserver) {
