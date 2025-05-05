@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceService } from '../Service/service.service';
 
 @Component({
   selector: 'personal-information',
@@ -22,7 +23,13 @@ export class PersonalInformationComponent implements OnInit {
     'Currently, working as Jr. Software Engineer',
   ];
 
-  constructor() {}
+  constructor(private chat :ServiceService) {
+    setTimeout(() => {
+      var to = 1;
+      this.chat.onConnectedUser("onUpdateRecentViewer",to);
+  
+    }, 2000);
+  }
 
   ngOnInit(): void {}
 }

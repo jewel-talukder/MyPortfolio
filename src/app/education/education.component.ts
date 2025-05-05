@@ -12,7 +12,7 @@ export class EducationComponent implements OnInit {
       institute: 'Govt.Muksudpur College',
       course: 'BSS in Degree',
       duration: 'Currently',
-      score: 'Ongoing',
+      score: 'Ongoing'
     },
     {
       institute: 'M.A. Khaleque Degree College',
