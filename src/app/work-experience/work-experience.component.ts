@@ -9,9 +9,19 @@ import { WorkExperience } from '../models/models';
 export class WorkExperienceComponent implements OnInit {
   workExpList: WorkExperience[] = [
     {
+      role: 'Software Engineer(Backend)',
+      company: 'Raintor Ltd',
+      duration: 'May 2025 - Now',
+      description: [
+        'Working on Govt Projects i.e.:Truthbox Software And Restaurant Management Software.',
+        'My role involves building and maintaining robust, scalable backend systems with a strong focus on real-time functionality using SignalR.'
+
+      ],
+    },
+    {
       role: 'Software Engineer',
       company: 'Dream71 Bangladesh Ltd',
-      duration: 'Feb 2024 - Now',
+      duration: 'Feb 2024 - May 2025',
       description: [
         'Working on Govt Projects i.e.:High Way Road Management Software',
       ],
@@ -40,4 +50,11 @@ export class WorkExperienceComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+  formatDescription(desc: string): string {
+  var data= desc.length > 80
+    ? desc.slice(0, 95) + '<br>' + desc.slice(95)
+    : desc;
+    debugger;
+    return data;
+}
 }

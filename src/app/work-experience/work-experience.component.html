@@ -7,7 +7,7 @@
             <h3>{{workexp.company}}</h3>
             <h4>{{workexp.duration}}</h4>
             <ul>
-                <li *ngFor="let desc of workexp.description">{{desc}}</li>
+                <li *ngFor="let desc of workexp.description" [innerHTML]="formatDescription(desc)"></li>
             </ul>
         </li>
     </ul>
